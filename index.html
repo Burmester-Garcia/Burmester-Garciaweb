@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burmester&amp;Garcia - Planos y Visualizaciones</title>
+  <!-- Estilos básicos en línea; puedes trasladarlos a un archivo CSS externo -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    header nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    .product {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    .product img {
+      max-width: 100%;
+      border-radius: 5px;
+      display: block;
+      margin-bottom: 0.75rem;
+    }
+    .product button,
+    footer button {
+      background: #007bff;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .product button:hover,
+    footer button:hover {
+      background: #0056b3;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Encabezado con nombre, descripción y menú de navegación -->
+  <header>
+    <h1>Burmester&amp;Garcia</h1>
+    <p>Accede a nuestros planos modelos y servicios adicionales con low tickets y opciones personalizadas.</p>
+    <nav>
+      <a href="#modelos">Modelos</a>
+      <a href="#adicionales">Adicionales</a>
+      <a href="#personalizado">Personalizado</a>
+    </nav>
+  </header>
+  
+  <!-- Contenido de la página -->
+  <div class="container">
+    <!-- Sección de Planos Modelos -->
+    <section id="modelos">
+      <h2>Planos Modelos</h2>
+      <p>Paga un ticket bajo para descargar nuestros planos modelos innovadores y listos para usar en tus proyectos.</p>
+      <!-- Ejemplo de producto -->
+      <div class="product">
+        <h3>Modelo Básico</h3>
+        <!-- Reemplaza "modelo1.jpg" por la ruta a tu imagen -->
+        <img src="modelo1.jpg" alt="Plano Modelo Básico">
+        <p>Plan básico ideal para iniciar tu proyecto.</p>
+        <button onclick="comprar('modelo basico', 5)">Comprar por $5</button>
+      </div>
+    </section>
+    
+    <!-- Sección de Servicios Adicionales -->
+    <section id="adicionales">
+      <h2>Servicios Adicionales</h2>
+      <p>Añade valor a tu proyecto con nuestros servicios extra:</p>
+      
+      <div class="product">
+        <h3>Planos de Corte</h3>
+        <!-- Reemplaza "corte.jpg" por la imagen correspondiente -->
+        <img src="corte.jpg" alt="Planos de Corte">
+        <p>Obtén planos detallados de corte para optimizar la construcción.</p>
+        <button onclick="comprar('planos de corte', 10)">Comprar por $10</button>
+      </div>
+      
+      <div class="product">
+        <h3>Visualización en 3D</h3>
+        <!-- Reemplaza "3d.jpg" por la imagen correspondiente -->
+        <img src="3d.jpg" alt="Visualización en 3D">
+        <p>Explora tu proyecto con impresionantes renderizaciones en 3D.</p>
+        <button onclick="comprar('visualización en 3D', 15)">Comprar por $15</button>
+      </div>
+    </section>
+    
+    <!-- Sección de Servicio Personalizado -->
+    <section id="personalizado">
+      <h2>Servicio Personalizado</h2>
+      <p>Si el proyecto te entusiasma, ofrecemos un servicio personalizado para afinar cada detalle a tus necesidades.</p>
+      <button onclick="window.location.href='contacto.html'">Contacta con nosotros</button>
+    </section>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 Burmester&amp;Garcia. Todos los derechos reservados.</p>
+  </footer>
+  
+  <!-- JavaScript para gestionar eventos de compra -->
+  <script>
+    function comprar(producto, precio) {
+      // Lógica simulada de la acción de compra.
+      // Aquí podrías integrar APIs de pago como PayPal, Stripe o formularios para redirigir al usuario.
+      alert(`Has seleccionado ${producto}. El precio es $${precio}. Esta función se integrará próximamente.`);
+    }
+  </script>
+</body>
+</html>
